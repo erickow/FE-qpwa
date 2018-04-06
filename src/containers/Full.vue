@@ -1,12 +1,12 @@
 <template>
   <div class="full">
-    <v-app>
-      <AppHeader/>
-        <v-content>
-          <router-view></router-view>
-        </v-content>
-      <AppFooter/>
-    </v-app>     
+      <v-app>
+        <AppHeader/>
+          <v-content>
+            <router-view></router-view>
+          </v-content>
+        <AppFooter/>
+      </v-app>
   </div>
 </template>
 
@@ -35,4 +35,8 @@ export default {
 }
 </script>
 
-
+<style>
+.container {
+  max-height: 100vh;
+}
+</style>
