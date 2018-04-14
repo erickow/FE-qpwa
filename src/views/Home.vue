@@ -1,9 +1,9 @@
 <template>
   <div class="v-home">
       <v-container grid-list-md fluid>
-        <v-layout fill-height row wrap>
+        <v-layout  row wrap>
             <v-flex >
-                <v-card dark color="primary">
+                <v-card dark color="primary" id="header-surat">
                     <v-card-text>
                       <p>Surah Ke</p>
                     </v-card-text>
@@ -12,11 +12,11 @@
         </v-layout>
         <v-layout row wrap>
         <v-flex d-flex xs12 sm12 md8 lg8>
-            <v-card dark color="primary">
+            <v-card dark color="primary" id="main">
              <v-container grid-list-md fluid>
-                    <v-layout row wrap>
+                    <v-layout row wrap id="square">
                         <v-flex xs12>
-                            <v-card dark color="secondary">
+                            <v-card dark color="square">
                             <v-card-text class="px-0">
                                 <v-card-text>
                                     <h1 dir="rtl">
@@ -73,5 +73,13 @@ export default {
 </script>
 
 <style>
-
+#header-surat {
+    background-color: #4ecdc4 !important;
+}
+#main{
+    background-color: #3b4753 !important;
+}
+#square {
+    background-color: #4ecdc4 !important;
+}
 </style>
